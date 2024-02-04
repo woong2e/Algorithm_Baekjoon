@@ -7,6 +7,7 @@ import java.util.*;
   O(pattern.length()*text.length())의 시간복잡도를 가지게 된다. 따라서 fail 배열을 이용하여
   시간복잡도가 O(pattern.length() + text.length())으로 선형시간의 알고리즘을 만들 수 있다.
  */
+
 public class _1786 {
     static int cnt;
     public static void main(String[] args) throws IOException {
@@ -36,7 +37,6 @@ public class _1786 {
     이전 인덱스까지 확인한 부분중 다음으로 text의 suffix와 pattern의 preffix가 같은 곳의 pattern의 인덱스를 불러온다.
     그렇게 함으로써 선형시간의 알고리즘을 구현할 수 있다.
      */
-
     static List<Integer> kmp(String text, String pattern) {
         List<Integer> ans = new ArrayList<>();
         int[] fail = getFail(pattern);
