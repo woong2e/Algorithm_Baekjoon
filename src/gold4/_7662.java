@@ -6,8 +6,7 @@ import java.util.*;
 TreeSet은 Set 인터페이스를 상속받아 구현한 클래스로 이진 탐색 트리의 구조를 가지고 있다.
 따라서 Set의 특성을 가지고 있어 중복을 허용하지 않는데, 중복값을 저장하기 위해 Map 자료구조를 이용하여 카운트를 한 후,
 Set에서 Delete를 하기 전 Map을 먼저 확인하여 중복값이 있을 경우 우선적으로 카운트를 하는 방식으로 이중 우선순위 큐를 구현하였다.
- */
-
+*/
 public class _7662 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
